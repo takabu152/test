@@ -1,0 +1,134 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+img{
+	width: 100%;
+}
+
+.body-base{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.mainbg-class{
+	position: relative;
+}
+
+.mainbg-class .maingb-textposition{
+    position: absolute;
+	top: 25%;
+	margin: 0 auto;
+}
+
+.mainbg-text1{
+	margin-bottom: 40px;
+	color: white;
+	font-size: 42px;
+	text-align: center;
+}
+
+.mainbg-text2{
+	color: white;
+	font-size: 36px;
+	text-align: center;
+}
+
+.mainmenu-class{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	height: 80px;
+	width: 960px;
+	margin-bottom: 120px;
+}
+
+.mainmenu-img{
+	float: left;	
+	border-bottom: medium solid #efefef;
+	height: 100%;
+}
+
+.mainmenu-text{
+	display: block;
+	float: left;
+	border-bottom: medium solid #efefef;
+	height: 100%;
+	background-color: aqua;
+	font-size: 21px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.active {
+	background-color: #da3c41;
+}
+
+/*p{
+	color:#f00;
+	background-color: black;
+}
+*/
+
+#text1{
+	color: aqua;
+	background-color: brown;
+}
+
+.class1{
+	color: blueviolet;
+	background-color: aqua;
+}
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/

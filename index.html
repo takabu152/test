@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>チーズアカデミー</title>
+    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+    <meta property="og:title" content="チーズアカデミー">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="チーズアカデミー" />
+    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- あらかじめJSファイルを読み込む -->
+    <!-- jqueryを読み込んでから設定をする -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.email-autocomplete.min.js"></script>
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/js.js"></script>
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+</head>
+<div id="wrapper">
+
+    <body class="animated fadeIn fadeIn-test">
+        <header>
+            <section id="header">
+                <div id="header-title-text-base">
+                    <h1 id="h1_title_text">セカイを変えるチーズを作ろう</h1>
+                    <h2 id="h2_title_text">チーズ職人養成学校「チーズアカデミーFUKUOKA</h2>
+                </div>
+            </section>
+        </header>
+
+        <!-- <nav>
+            <ul>
+                <li><img src="img/header_logo.png" alt=""></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">ACCESS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav> -->
+
+        <div class="main-navi-flexcontainer">
+            <div class="main-navi-img-container">
+                <img src="img/header_logo.png" alt="" id="header-logo" class="main-navi-img">
+            </div>
+            <div class="main-navi-text">
+                <div class="main-navi-text-title">
+                    <!-- <p id="ABOUT-JS"><a href="javascript:;">idセレクタで指定をしています。ココをクリックすると文字が変更されます</a></p> -->
+                    <!-- <a id="ABOUT-JS" href="javascript:;">ABOUT</a> -->
+                    <a id="ABOUT-JS" href="#about">ABOUT</a>
+                </div>
+                <div class="main-navi-text-title">
+                    <!-- <a id="COURSE-JS" href="javascript:;">COURSE</a> -->
+                    <!-- <p>COURSE</p> -->
+                    <a id="COURSE-JS" href="#course">COURSE</a>
+                </div>
+                <div class="main-navi-text-title">
+                    <a id="NEWS-JS" href="#news">NEWS</a>
+                    <!-- <a id="NEWS-JS" href="javascript:;">NEWS</a> -->
+                    <!-- <p>NEWS</p> -->
+                </div>
+                <div class="main-navi-text-title">
+                    <!-- <a id="ACCESS-JS" href="javascript:;">ACCESS</a> -->
+                    <!-- <p>ACCESS</p> -->
+                    <a id="ACCESS-JS" href="#access">ACCESS</a>
+                </div>
+                <div class="main-navi-text-title">
+                    <!-- <a id="CONTACT-JS" href="javascript:;">CONTACT</a> -->
+                    <!-- <p>CONTACT</p> -->
+                    <a id="CONTACT-JS" href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="title1-yellow animated bounce bounce-test">
+                ABOUT
+            </div>
+            <div class="title2">
+                チーズアカデミーについて
+            </div>
+            <div class="title3">
+                チーズアカデミーは、チーズ職人養成学校です。
+            </div>
+            <div class="about-text">
+                <p>チーズの素晴らしさを，自給自足を通じて，できるだけ多くの人に知っていただきたい．
+                    <br>そして，食卓にはいつもチーズがあった，あの頃の当たり前をこの手で取り戻したい．
+                    <br>
+                    <br>そんな思いから，チーズ職人養成学校「チーズアカデミーFUKUOKA」は歩みを始めています．
+                    <br>卒業後，チーズ自給自足のバックアップはもちろんのこと，
+                    <br>チーズ職人への就職・転職もサポートします．
+                </p>
+            </div>
+            <div id="about-img">
+                <ul class="slider">
+                    <li><img src="img/about_01.jpg" alt="" id="about_01_jpg"></li>
+                    <li><img src="img/about_02.jpg" alt="" id="about_02_jpg"></li>
+                    <li><img src="img/about_03.jpg" alt="" id="about_03_jpg"></li>
+                    <li><img src="img/about_04.jpg" alt="" id="about_04_jpg"></li>
+                </ul>
+                <!-- <img src="img/about-image.jpg" alt=""> -->
+            </div>
+        </section>
+        <section id="course">
+            <div class="title1-black  animated bounce bounce-test">
+                COURSE
+            </div>
+            <div class="title2">
+                <p>未経験からでもスタートができるよう，カリキュラムは多くの専門家や
+                    <br>現役チーズ職人のアドバイスのもと，作られました．
+                </p>
+            </div>
+
+            <div class="flex-wrapper">
+                <div class="flex-img-box">
+                    <img src="img/about_02.jpg" alt="" class="flex-img" id="about_02_jpg_flex">
+                </div>
+                <div class="flex-text">
+                    <div class="flex-text-content">
+                        <p class="course-texttitle">本格的な農園を使った実地研修</p>
+                        <p class="course-text">
+                            チーズアカデミーでは，本格的な農園を使った実地研修を行うことができます．プロとして活躍するチーズ職人も使用するような，広大で環境も整った農園を余すところなく使い，卒業時には本格的なチーズを自分の力で作れる実践力の養成を目指します．
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-wrapper">
+                <div class="flex-text">
+                    <div class="flex-text-content">
+                        <p class="course-texttitle">必要な知識もしっかりと取得</p>
+                        <p class="course-text">
+                            チーズ作りには，しっかりとした食に関する知識が欠かせません．チーズアカデミーでは，一流講師陣による，チーズ作りに必要ないろはを余すところなく学べます．チーズそのものでなく，栄養学全般を学ぶことも可能ですので，チーズ以外への展開も夢ではないでしょう．
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-img-box">
+                    <img src="img/course_02.jpg" alt="" class="flex-img">
+                </div>
+            </div>
+            <div class="flex-wrapper">
+                <div class="flex-img-box">
+                    <img src="img/course_03.jpg" alt="" class="flex-img">
+                </div>
+                <div class="flex-text">
+                    <div class="flex-text-content">
+                        <p class="course-texttitle">卒業制作はティスティング審査あり</p>
+                        <p class="course-text">
+                            チーズアカデミーでは最後の2ヶ月間で卒業制作を実施．卒業制作として，チーズ作りを実際に行います．卒業後，一般参加によるティスティング審査があるため，作り手の目線だけでなく，消費者の目線から，卒業制作作品としてのチーズを，しっかりと評価いただくことができます．
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="title1-yellow  animated bounce bounce-test">
+                NEWS
+            </div>
+            <div class="flex-wrapper-news">
+                <div class="flex-img-box-news">
+                    <img src="img/news_img.jpg" alt="" class="flex-img">
+                    <p class="news-section-title">2018/11/24</p>
+                    <p class="news-section-text">チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！
+                    </p>
+                </div>
+                <div class="flex-img-box-news">
+                    <img src="img/news_img.jpg" alt="" class="flex-img">
+                    <p class="news-section-title">2018/11/24</p>
+                    <p class="news-section-text">チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！
+                    </p>
+                </div>
+                <div class="flex-img-box-news">
+                    <img src="img/news_img.jpg" alt="" class="flex-img">
+                    <p class="news-section-title">2018/11/24</p>
+                    <p class="news-section-text">チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div id="more">
+            <button class="btn-border">MORE</button>
+        </div>
+        <section id="access">
+            <div class="title1-black  animated bounce bounce-test">
+                Access
+            </div>
+            <div class="title2">
+                会社情報
+            </div>
+            <div id="map">
+                <div class="map-wrapper">
+                    <iframe class="map-content"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7182365593067!2d130.39228031505175!3d33.58666428073508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2zRydzIEFDQURFTVkgRlVLVU9LQSDjgqjjg7Pjgrjjg4vjgqLotbfmpa3lrrbppIrmiJDlrabmoKE!5e0!3m2!1sja!2sjp!4v1554453269020!5m2!1sja!2sjp"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="flex-wrapper-access">
+                <p class="access-text-title">学校名</p>
+                <p class="access-text">チーズアカデミーTOKYO</p>
+            </div>
+            <div class="flex-wrapper-access">
+                <p class="access-text-title">事務所所在地</p>
+                <p class="access-text">郵便番号100-00000000</p>
+            </div>
+            <div class="flex-wrapper-access">
+                <p class="access-text-title">tel</p>
+                <p class="access-text">00-0000-0000</p>
+            </div>
+            <div class="flex-wrapper-access">
+                <p class="access-text-title">FAX</p>
+                <p class="access-text">00-0000-0000</p>
+            </div>
+            <div class="flex-wrapper-access">
+                <p class="access-text-title">MAIL</p>
+                <p class="access-text">aaaa@aaaaaaaa</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="title1-black  animated bounce bounce-test">
+                CONTACT
+            </div>
+            <div class="title2">
+                説明会お申込み・お問合せ
+            </div>
+            <div>
+                <p>ぜひ1度，足を運んでみませんか．説明会は随時開催中．<br>その他，お問い合わせもお気軽にどうぞ．お待ちしております．</p>
+            </div>
+            <div>
+                ※チーズアカデミーは実際には存在しません．間違っても問い合わせしないようお願いいたします．
+            </div>
+            <form action="" id="form-contact">
+                <div class="flex-wrapper-contact">
+                    <p class="contact-text-title">名前</p>
+                    <p class="contact-text"><input type="text" name="name" class="text-line"></p>
+                </div>
+                <div class="flex-wrapper-contact">
+                    <p class="contact-text-title">カナ</p>
+                    <p class="contact-text"><input type="text" name="kana" class="text-line"></p>
+                </div>
+                <div class="flex-wrapper-contact">
+                    <p class="contact-text-title">メールアドレス</p>
+                    <p class="contact-text"><input type="email" name="email" id="email" placeholder="enter email"
+                            class="text-line"></p>
+                </div>
+                <div class="flex-wrapper-contact">
+                    <p class="contact-text-title">志望動機</p>
+                    <div class="contact-text">
+                        <input type="checkbox" name="contact-check" value="1" checked="checked">起業をしたい
+                        <br>
+                        <input type="checkbox" name="contact-check" value="2">チーズ系企業に就職・転職したい
+                        <br>
+                        <input type="checkbox" name="contact-check" value="3">チーズと関わる仕事をしており、仕事に生かしたい
+                        <br>
+                        <input type="checkbox" name="contact-check" value="4">チーズの教養を身に着けたい
+                    </div>
+                </div>
+                <div class="flex-wrapper-contact">
+                    <p class="contact-text-title">詳細</p>
+                    <div class="contact-text"><textarea name="textdetail" cols="50" rows="10"
+                            class="text-line"></textarea></div>
+                </div>
+                <div class="btn-border">
+                    <input type="submit" value="send">
+                </div>
+            </form>
+        </section>
+        <div id="topback">
+            <div class="top-button-container">
+                <!-- <button class="top-button">↑</button> -->
+                <a class="top-button" href="#header">TOP</a>
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <div>
+                <p>copyrights 2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(function ($) {
+                var nav = $('.main-navi-flexcontainer'),
+                    offset = nav.offset();
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > offset.top) {
+                        nav.addClass('navifixed');
+                    } else {
+                        nav.removeClass('navifixed');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</div>
+
+</html>

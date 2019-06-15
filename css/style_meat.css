@@ -1,0 +1,580 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+	text-align: center
+}
+
+img{
+	width: 100%;
+}
+header{
+	height:250px;
+}
+header h1{
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+header h2{
+	font-size: 36px;
+}
+
+#header{
+	background-image: url("../img/mainbg.png");
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+}
+
+#header-title-text-base{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content:center; 
+	align-items:center;
+}
+
+.header-title-text1{
+	color: white;
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+
+.header-title-text2{
+	color: white;
+	font-size: 36px;
+}
+
+#main-navi{
+	height: 80px;
+	width: 960px;
+	margin-bottom: 120px;
+	font-size: 21px;
+	padding-top: 2px;
+}
+
+#more{
+	margin-bottom: 48px;
+}
+
+#map{
+	margin-bottom:64px;
+}
+
+.main-navi-flexcontainer{
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	/* align-self: stretch; */
+	height: 60px;
+	margin-bottom: 120px;
+	border-bottom: solid #efefef;
+	
+}
+
+.main-navi-img-container{
+	height: 100%;
+	width: 50%;
+}
+
+.main-navi-img{
+	width: 50%;
+	object-fit: fill;
+}
+
+.main-navi-text{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+	flex-wrap: nowrap;
+	/* align-self: stretch; */
+	height: 100%;
+	width:50%;
+}
+
+.main-navi-text-title{
+	width: 100%;
+}
+
+nav {
+	/* background-color: #222222; */
+	color: white;
+	height: 80px;
+	margin: 0;
+	margin-bottom: 120px;
+	border-bottom: solid #efefef;
+	padding-bottom: 2px;
+}
+nav ul {
+    display: flex;
+	justify-content: space-around;
+	margin: 0;
+	height: 80px;
+	align-items: center;
+}
+nav img{
+	/* border-bottom: solid #efefef; */
+	width: 50%;
+	margin: 0;
+}
+nav a {
+	/* display: block;
+	border-radius: 4px;
+	padding: 12px 24px;
+	text-decoration: none;
+	text-align: center; */
+	/* height: 80px;
+	margin: 0; */
+	color: black;
+}
+nav li a:hover {
+	background-color: #8cae47;
+}
+
+.logo-line{
+	border: solid #efefef;
+	/* flex-grow: 3; */
+}
+
+.logo-text{
+	/* flex-grow: 1; */
+	border-top: solid #efefef;
+	border-bottom: solid #efefef;
+	border-right: solid #efefef;
+	vertical-align: middle;
+}
+
+.logo-img{
+	/* height: 50%;
+	width: 50%; */
+	margin: auto auto auto auto;
+}
+
+#about-img{
+	margin-bottom: 64px;
+}
+
+#course{
+	margin-bottom: 64px;
+}
+
+#access{
+	padding-bottom: 80px;
+	background-color: #fafafa;
+}
+
+.content-wrapper{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+	flex-wrap: nowrap;
+	/* align-self: stretch; */
+	height: 100%;
+	width:50%;
+}
+
+.inline-block-half {
+    display: inline-block;      /* インラインブロック要素にする */
+    /* background-color:  #ccc;    背景色指定 */
+	/* padding: 50px;              余白指定 */
+	width: 460px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+}
+
+.inline-block-three{
+	display: inline-block;      /* インラインブロック要素にする */
+    /* background-color:  #ccc;    背景色指定 */
+	/* padding: 50px;              余白指定 */
+	width: 33%;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 32px;
+}
+
+.inline-block-access{
+    display: inline-block;      /* インラインブロック要素にする */
+    /* background-color:  #ccc;    背景色指定 */
+	/* padding: 50px;              余白指定 */
+	width: 460px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+}
+
+.contact-form{
+	width: 80%;
+	margin: 0 auto;
+	padding: 2px;
+}
+
+.inline-block-contact-title{
+    display: inline-block;      /* インラインブロック要素にする */
+    /* background-color:  #ccc;    背景色指定 */
+	/* padding: 50px;              余白指定 */
+	text-align: left;
+	vertical-align:top;
+	width:20%;
+	margin-right: 120px;
+}
+
+.inline-block-contact-detail{
+    display: inline-block;      /* インラインブロック要素にする */
+    /* background-color:  #ccc;    背景色指定 */
+	/* padding: 50px;              余白指定 */
+	text-align: left;
+	vertical-align:top;
+	width:40%;
+}
+
+.text-line{
+	border: 2px solid gray;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+	padding: 0.5em;          /* 内側の余白量 */
+	size : 20px;
+}
+
+
+#news{
+	margin-bottom: 56px;
+}
+
+.news-section-img{
+	margin-bottom: 32px;
+}
+
+.news-section-title{
+	margin-bottom: 24px;
+	text-align: left;
+}
+
+.news-section-text{
+	text-align: left;
+}
+
+
+
+.yellow-button{
+	border-radius: 5px;
+  	background-color: orange;
+  	padding: 20px;
+	  text-align: center;
+	  vertical-align: middle;
+	color: white;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+}
+
+.top-button-container{
+	display: flex;
+	flex-direction: row-reverse;
+	padding-right:30px;
+}
+
+.top-button{
+	/* border-radius: 5px; */
+  	background-color:#707070;
+  	padding: 20px;
+	/* text-align: center; */
+	/* vertical-align: middle; */
+	color: white;
+	font-size: 21px;
+	width: 60px;
+	height: 60px;
+
+}
+
+
+.title1-yellow{
+	font-size: 24px;
+	color: #ffd61a;
+	margin-bottom: 24px;
+}
+
+.title1-black{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 24px;
+}
+
+.title2{
+	margin-bottom: 64px;
+}
+
+.title3{
+	margin-bottom: 40px;
+}
+
+.about-text{
+	margin-bottom: 80px;
+}
+
+img{
+	width: 100%;
+}
+
+.body-base{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.mainbg-class{
+	position: relative;
+}
+
+.mainbg-class .maingb-textposition{
+    position: absolute;
+	top: 25%;
+	margin: 0 auto;
+}
+
+.mainbg-text1{
+	margin-bottom: 40px;
+	color: white;
+	font-size: 42px;
+	text-align: center;
+}
+
+.mainbg-text2{
+	color: white;
+	font-size: 36px;
+	text-align: center;
+}
+
+.mainmenu-class{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	height: 80px;
+	width: 960px;
+	margin-bottom: 120px;
+}
+
+.mainmenu-img{
+	float: left;	
+	border-bottom: medium solid #efefef;
+	height: 100%;
+}
+
+.mainmenu-text{
+	display: block;
+	float: left;
+	border-bottom: medium solid #efefef;
+	height: 100%;
+	background-color: aqua;
+	font-size: 21px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.active {
+	background-color: #da3c41;
+}
+
+/*p{
+	color:#f00;
+	background-color: black;
+}
+*/
+
+#text1{
+	color: aqua;
+	background-color: brown;
+}
+
+.class1{
+	color: blueviolet;
+	background-color: aqua;
+}
+
+.map-wrapper{
+	position: relative;
+    width: 100%;
+}
+
+.map-wrapper:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+}
+
+.map-content{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.flex-wrapper{
+    display:flex; 
+    /* justify-content:center; 
+    align-items:center;
+    /* height: 320px; */
+    /* margin: 0; */
+}
+
+.flex-img-box{
+    width:50%;
+    /* height: 100%; */
+}
+
+.flex-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-text-content{
+    width:80%;
+}
+
+.flex-wrapper-news{
+	display:flex; 
+	justify-content: space-around;
+	align-items:center;
+	/* justify-content:center; 
+    align-items:center;
+    /* height: 320px; */
+    /* margin: 0; */
+}
+
+.flex-img-box-news{
+	width:25%;
+	/* margin: 0; */
+    /* height: 100%; */
+}
+
+.flex-wrapper-access{
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    /* height: 320px; */
+    /* margin: 0; */
+}
+
+.access-text-title{
+	width: 20%;
+	text-align: left;
+	/* border: solid 1px; */
+	padding-bottom: 24px;
+}
+
+
+.access-text{
+	width: 20%;
+	text-align: left;
+	/* border: solid 1px; */
+	padding-bottom: 24px;
+}
+
+#form-contact{
+	padding-top:50px;
+	margin-bottom: 50px;
+}
+
+.flex-wrapper-contact{
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    /* height: 320px; */
+    /* margin: 0; */
+}
+
+.contact-text-title{
+width: 30%;
+	text-align: left;
+	vertical-align: top;
+	/* border: solid 1px; */
+	padding-bottom: 24px;
+}
+
+.contact-text{
+	width: 50%;
+	text-align: left;
+	/* border: solid 1px; */
+	padding-bottom: 24px;
+}
+
+#footer{
+	display: flex;
+	background-color:#707070;
+	align-items: center;
+	justify-content:center;
+	font-size: 12px;
+	color: white;
+	height: 60px;
+	
+}
+
+#contact{
+	margin-top: 30px;
+}
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
